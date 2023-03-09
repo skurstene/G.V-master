@@ -1,0 +1,380 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.site-header {
+    background-image: url('NUOTR/Pazaislio-vienuolynas-A.Aleksandravicius-nuotr..jpg');
+    max-width: 100%;
+    height:860px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #979797;
+    font-family: 'Cardo', sans-serif;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    font-weight: 400;
+}
+
+.container.flex-container{
+    justify-content: space-between;
+    color: white;
+}
+
+.main-header {
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    margin: 0 20px;
+}
+
+.main-header div {
+    width: 33.33%;
+}
+
+.main-header ul li {
+    margin-left:30px;
+}
+
+.main-header a {
+    text-decoration:none;
+    color:#fff;
+}
+
+/* navigacija*/
+
+.container {
+    max-width:100%;
+    margin:0 auto;
+}
+
+.flex-container {
+    display: flex;
+    
+}
+
+.mp.flex-container {
+    justify-content: space-between;
+}
+
+/* juosta*/
+ul.flex-container {
+    list-style:none;
+}
+
+.logo {
+    padding:30px 0;
+    text-align: center;
+}
+.regist
+{  
+    position: fixed;
+    text-align: center;
+    padding-top: 54px;
+    background-color: #567E7A;
+    border:rgba(0, 0, 0, 0.25);
+    color: white;
+    Width: 160px;
+    Height: 140px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border: none;
+    cursor: pointer;
+}
+.regist:hover {background: #c2bfbf;}
+
+.menu {
+    border: none;
+    background: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    cursor: pointer;
+    right: 40%;
+    height: 110px;
+    
+}
+
+.site-home-link {
+    border: none;
+    background: none;
+    height: 90px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+/* mes*/
+.container{
+	max-width: 1000px;
+	margin: 0 auto;
+	padding-left: 40px;
+	padding-right: 40px;
+	
+}
+
+.flex{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.col{
+	margin-top: 25px;
+	width: calc(33.3333% - 17px);
+	-webkit-box-shadow: 5px 5px 16px 0px rgba(176,176,176,1);
+	-moz-box-shadow: 5px 5px 16px 0px rgba(176,176,176,1);
+	box-shadow: 5px 5px 16px 0px rgba(176,176,176,1);
+}
+
+img{
+	display: block;
+	width: 100%;
+}
+
+.slider,
+.gallery{
+	background-color: #F2F2F2;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.slider{
+	background-color: #A5A5A5;
+}
+
+.bg{
+	background-color: #BCE7FD;
+}
+
+
+
+/* .slider{
+    position: relative;
+    overflow-x: hidden;
+    height: 230px;
+    background-color: #6C6C6C; 
+    
+      
+}
+.slider-width{
+    position: absolute;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    left: 0;
+    top: 0;
+    transition: 0.5s ease-in-out ;
+}
+.rest{
+    background-image: url('NUOTR/rest.jpg');
+    
+    width:300px;
+    height: 183px;
+    margin: 0 3px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F0EEEA;
+
+}
+.vie{
+    background-image: url('NUOTR/restoranas\ \(2\).jpg');
+    width:300px;
+    height: 183px;
+    margin: 0 3px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F0EEEA;
+
+}
+.kup{
+    background-image: url('NUOTR/download.jpg');
+    width:300px;
+    height: 183px;
+    margin: 0 3px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F0EEEA;
+
+}
+.sven{
+    background-image: url('NUOTR/svente.jpg');
+    width:300px;
+    height: 183px;
+    margin: 0 3px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F0EEEA;
+
+}
+.vynas{
+    background-image: url('NUOTR/vynas.jpg');
+    width:300px;
+    height: 183px;
+    margin: 0 3px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F0EEEA;
+}
+.but{
+    background-color: rgb(245, 24, #c2bfbf);
+    border: none;
+    outline: none;
+    color: #979797;
+    font-size: 25px;
+    padding: 2px 12px;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    top: 80%;
+  
+} */
+
+
+
+
+/* .service {
+    display:flex;
+    width: 100%;
+    flex-direction: row;
+     background-color: #D8D8D8;
+     font-family: 'Cardo', sans-serif;
+     font-style: normal;
+     color: #fff;
+     list-style: none;
+    
+}
+
+.service img {
+    max-height:170px;
+    width: 333px;
+}
+
+
+h2 {
+    text-transform: uppercase;
+    margin-left: 20px;
+    text-align: center;
+
+} */
+
+/*apie*/
+.apie {
+
+    background-color: #F0EEEA;
+
+}
+
+.baroko {
+   
+    margin-left: 50px;
+    gap: 10px;
+    Width: 953px;
+Height: 214.67px;
+    color: #262626;
+    font-family: 'Cardo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 70px;
+}
+
+.istorija {
+
+    width: 643px;
+    height: 107.34px;
+    margin-left: 700px;
+    margin-bottom:30px ;
+    top: 1607.39px;
+    color: #6C6C6C;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 32px;
+}
+/*registracija*/
+.Registracija{
+    background-color:#F0EEEA ;
+    
+}
+.susisiek{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    color: burlywood;
+    padding-top: 15px;
+}
+input[type=text],  textarea {
+    width:98%;
+    margin-left: 15px;
+  padding: 20px 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  
+}
+input[type=submit]{
+    padding: 12px 20px;
+    text-align:center;
+    align-items:center;
+    border: none;
+    border-radius: 7px;
+    margin-bottom: 5px;
+    margin-left: 47%;
+    size: 20px;
+    color: #fff;
+    background-color: #6C6C6C;
+
+
+}
+input[type=submit]:hover {
+    background-color: #c2bfbf;
+
+  }
+
+/*footer*/
+.footer{
+    display: flex;
+    height: 50px;
+    text-align:center;
+    align-items:center;
+    background-color: #6C6C6C;
+}
+.link{
+    width: 100%;
+    margin-top: 10px;
+}
