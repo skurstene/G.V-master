@@ -1,12 +1,10 @@
-<!-- <?php
+ <?php
 
 require __DIR__ . '/kontaktine/kont.php';
 
-?> -->
-
+?> 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,11 +15,11 @@ require __DIR__ . '/kontaktine/kont.php';
     <link href="https://fonts.googleapis.com/css2?family=Cardo&family=DM+Sans&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a43ad4166e.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
-    <link rel="icon" type="image/x-icon" href="/NUOTR/favicon.ico">
+    <link rel="icon" type="image/x-icon/" href="NUOTR/favicon.ico">
     <link rel="stylesheet" href="Stilius/normalize.css">
-    <link rel="stylesheet" href="versk2.css">
+    <link rel="stylesheet" href="css/versk2.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js" defer></script>
-    <script src="veresk.js" defer></script>
+    <script src="JS/veresk.js" defer></script>
 </head>
 
 <body>
@@ -111,20 +109,20 @@ require __DIR__ . '/kontaktine/kont.php';
     </div>
     <footer class="footer">
         <div >
-            <a class="link" href="https://www.facebook.com/search/top?q=monte%20pacis">Facebook <i class="fa-brands fa-facebook-f"></i></a>
-            <a class="link" href="https://www.instagram.com/montepacis/">Instagram <i  class="fa-brands fa-instagram"></i></a>
-            <a class="link" href="#https://www.linkedin.com/company/uab-monte-pacis/">LinkedIn <i class="fa-brands fa-linkedin-in"></i></a>
+            <a class="link" href="https://www.facebook.com/montepacis.lt" target="_blank">Facebook <i class="fa-brands fa-facebook-f"></i></a>
+            <a class="link" href="https://www.instagram.com/montepacis/" target="_blank">Instagram <i  class="fa-brands fa-instagram"></i></a>
+            <a class="link" href="#https://www.linkedin.com/company/uab-monte-pacis/" target="_blank">LinkedIn <i class="fa-brands fa-linkedin-in"></i></a>
         </div>
     </footer>
     <address>
-        <div class="kont">
+        <div class="kont" id="kon">
             <div class="cent"> <a>Kontaktai:</a></div>
             <div class="rask"> Telefono numeri:
             <div class="tela"><a href="tel: +37060492935"> Paskambinkite mums. <i class="fa-solid fa-phone"></i></a></div></div>
             <div class="rask"> Elektroninis paštas:
             <div class="maila"><a href="mailto:vereskaitegabriele@gmail.com">Parašykite mums. <i class="fa-solid fa-envelope"></i></a></div></div>
             <div class="rask">Mus galite rasti:</div>
-            <div class="loc"> <a href="https://www.google.com/maps/place/Monte+Pacis/@54.8764566,24.018863,17z/data=!4m9!3m8!1s0x46e73d57a78d5e37:0x6be820256ba6d177!5m2!4m1!1i2!8m2!3d54.8762714!4d24.02088!16s%2Fg%2F12lkgkn57">  T. Masiulio g. 31, 52436 Kaunas. <i class="fa-solid fa-location-dot"></i> </a></div>
+            <div class="loc"> <a href="https://www.google.com/maps/place/Monte+Pacis/@54.8764566,24.018863,17z/data=!4m9!3m8!1s0x46e73d57a78d5e37:0x6be820256ba6d177!5m2!4m1!1i2!8m2!3d54.8762714!4d24.02088!16s%2Fg%2F12lkgkn57" target="_blank">  T. Masiulio g. 31, 52436 Kaunas. <i class="fa-solid fa-location-dot"></i> </a></div>
         </div>
     </address>
     
