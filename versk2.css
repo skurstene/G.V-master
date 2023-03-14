@@ -6,6 +6,7 @@
 
 body {
     margin: 0;
+    max-width: 1350x;
 }
 
 .site-header {
@@ -20,41 +21,49 @@ body {
     font-weight: 400;
 }
 
-.container.flex-container{
+ .flex-container{
+    position: fixed;
     justify-content: space-between;
     color: white;
+    z-index: 9999;
+    
 }
 
 .main-header {
-    width:100%;
+    width: 700px ;
     display:flex;
     justify-content: space-between;
     align-items:center;
-    margin: 0 20px;
+    margin: 0 160px;
+    height: 150px;
 }
 
 .main-header div {
     width: 33.33%;
 }
-
+.main-header a {
+    text-decoration:none;
+    color:#fff;
+    font-size: 20px;
+    font-family: 'Cardo', sans-serif;
+}
 .main-header ul li {
     margin-left:30px;
 }
 
-.main-header a {
-    text-decoration:none;
-    color:#fff;
-}
-
 /* navigacija*/
 
-.container {
+.containe {
     max-width:100%;
     margin:0 auto;
 }
+.site-home-link{
+    font-size: 20px;
 
+}
 .flex-container {
     display: flex;
+    font-size: 20px;
     
 }
 
@@ -75,19 +84,23 @@ ul.flex-container {
 {  
     position: fixed;
     text-align: center;
-    padding-top: 54px;
+    opacity:0.6;
+    padding-top: 45px;
     background-color: #567E7A;
     border:rgba(0, 0, 0, 0.25);
     color: white;
     Width: 160px;
-    Height: 140px;
+    Height: 120px;
     right: 0;
     top: 0;
     bottom: 0;
     border: none;
     cursor: pointer;
 }
-.regist:hover {background: #c2bfbf;}
+.regist:hover {
+    background: #c2bfbf;
+    opacity:0.8;
+}
 
 .menu {
     border: none;
@@ -110,14 +123,31 @@ ul.flex-container {
     font-size: 19px;
     cursor: pointer;
 }
+.mobile-menu {
+    display: none;
+}
+.teks{
+    text-align: center;
+     padding-top: 170px; /*pakeista */
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'Cardo', sans-serif;
+    font-size: 30px;
+}
+.mon{
+    padding: 70px;
+}
+
 
 /* mes*/
-.container{
-	max-width: 1000px;
-	margin: 0 auto;
-	padding-left: 40px;
-	padding-right: 40px;
-	
+p{
+    background-color:  #F0EEEA;
+     font-family: 'Cardo', sans-serif;
+     font-size: 100px;
+     font-style: normal;
+     color: #C8C6C3;
+     margin: 0 0 ;
+     text-align: center;
 }
 
 .flex{
@@ -126,193 +156,56 @@ ul.flex-container {
 	justify-content: space-between;
 }
 
-.col{
-	margin-top: 25px;
-	width: calc(33.3333% - 17px);
-	-webkit-box-shadow: 5px 5px 16px 0px rgba(176,176,176,1);
-	-moz-box-shadow: 5px 5px 16px 0px rgba(176,176,176,1);
-	box-shadow: 5px 5px 16px 0px rgba(176,176,176,1);
-}
-
-img{
+.sli{
 	display: block;
-	width: 100%;
+    width: 100%;
+
 }
 
 .slider,
 .gallery{
 	background-color: #F2F2F2;
-	padding-top: 100px;
-	padding-bottom: 100px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 .slider{
-	background-color: #A5A5A5;
+	background-color: #F0EEEA;
 }
-
-.bg{
-	background-color: #BCE7FD;
-}
-
-
-
-/* .slider{
-    position: relative;
-    overflow-x: hidden;
-    height: 230px;
-    background-color: #6C6C6C; 
-    
-      
-}
-.slider-width{
-    position: absolute;
-    display: flex;
-    align-items: start;
-    justify-content: start;
-    left: 0;
-    top: 0;
-    transition: 0.5s ease-in-out ;
-}
-.rest{
-    background-image: url('NUOTR/rest.jpg');
-    
-    width:300px;
-    height: 183px;
-    margin: 0 3px;
+h5{
+   
     text-align: center;
-    font-size: 40px;
-    font-weight: 400;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #F0EEEA;
-
-}
-.vie{
-    background-image: url('NUOTR/restoranas\ \(2\).jpg');
-    width:300px;
-    height: 183px;
-    margin: 0 3px;
-    text-align: center;
-    font-size: 40px;
-    font-weight: 400;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #F0EEEA;
-
-}
-.kup{
-    background-image: url('NUOTR/download.jpg');
-    width:300px;
-    height: 183px;
-    margin: 0 3px;
-    text-align: center;
-    font-size: 40px;
-    font-weight: 400;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #F0EEEA;
-
-}
-.sven{
-    background-image: url('NUOTR/svente.jpg');
-    width:300px;
-    height: 183px;
-    margin: 0 3px;
-    text-align: center;
-    font-size: 40px;
-    font-weight: 400;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #F0EEEA;
-
-}
-.vynas{
-    background-image: url('NUOTR/vynas.jpg');
-    width:300px;
-    height: 183px;
-    margin: 0 3px;
-    text-align: center;
-    font-size: 40px;
-    font-weight: 400;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #F0EEEA;
-}
-.but{
-    background-color: rgb(245, 24, #c2bfbf);
-    border: none;
-    outline: none;
-    color: #979797;
+    color:darksalmon;
+    font-family: 'Cardo';
+    font-style: normal;
+    font-weight: 100;
     font-size: 25px;
-    padding: 2px 12px;
-    cursor: pointer;
-    position: absolute;
-    left: 50%;
-    top: 80%;
-  
-} */
-
-
-
-
-/* .service {
-    display:flex;
-    width: 100%;
-    flex-direction: row;
-     background-color: #D8D8D8;
-     font-family: 'Cardo', sans-serif;
-     font-style: normal;
-     color: #fff;
-     list-style: none;
-    
 }
-
-.service img {
-    max-height:170px;
-    width: 333px;
-}
-
-
-h2 {
-    text-transform: uppercase;
-    margin-left: 20px;
-    text-align: center;
-
-} */
 
 /*apie*/
 .apie {
-
     background-color: #F0EEEA;
-
+    
 }
 
 .baroko {
-   
-    margin-left: 50px;
-    gap: 10px;
-    Width: 953px;
-Height: 214.67px;
+    display: flex;
+    float: left;
+    width: 70%;
+    Height: 214.67px; 
     color: #262626;
     font-family: 'Cardo';
     font-style: normal;
     font-weight: 400;
     font-size: 46px;
     line-height: 70px;
+    padding: 20px 20px;
 }
 
 .istorija {
-
-    width: 643px;
-    height: 107.34px;
-    margin-left: 700px;
-    margin-bottom:30px ;
-    top: 1607.39px;
+    display: flex;
+     padding-top: 80px;
+    height: auto;
     color: #6C6C6C;
     font-family: 'DM Sans';
     font-style: normal;
@@ -368,13 +261,96 @@ input[type=submit]:hover {
 
 /*footer*/
 .footer{
-    display: flex;
-    height: 50px;
+    padding-top: 5px;
+    height: 30px;
     text-align:center;
     align-items:center;
-    background-color: #6C6C6C;
+    /* background-color: #6C6C6C; */
+    
 }
-.link{
+.link { 
     width: 100%;
-    margin-top: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color:#c2bfbf;
+    
 }
+.link:hover{
+    background:#6C6C6C;
+    opacity: 0.9;
+    border-radius: 10px 0 30px;
+}
+.copy{
+    display: flex;
+    color: #979797;
+    float: right;
+    margin: 0 0;
+  
+}
+.cent{
+    text-transform: uppercase;
+    color: #6C6C6C;
+    padding-bottom: 30px;
+    
+
+}
+.kont{
+    column-count: 4;
+
+}
+.rask{
+    color:#567E7A
+}
+
+address{
+    width: 100%;
+    display:flex;
+    background-color:#C8C6C3;
+    padding: 15px;
+    font-family: 'Cardo', sans-serif;
+}
+a[href="tel: +37060492935"], [href="mailto:vereskaitegabriele@gmail.com"], [href="https://www.google.com/maps/place/Monte+Pacis/@54.8764566,24.018863,17z/data=!4m9!3m8!1s0x46e73d57a78d5e37:0x6be820256ba6d177!5m2!4m1!1i2!8m2!3d54.8762714!4d24.02088!16s%2Fg%2F12lkgkn57"]{
+ text-decoration: none;
+ font-size: 15px;
+ color: rgb(26, 53, 162);
+}
+ @media all and (max-width:1264px) {
+    .menu, .site-home-link {
+        display:none;
+    }
+    .main-header {
+        display:block;
+    }
+    .mobile-menu {
+        display:flex;
+        position: absolute ;
+    }
+    .mobile-menu ul {
+        flex-direction:column;
+        display:none;
+        position:absolute;
+        padding:20px;
+
+    } 
+    .mobile-menu li {
+        list-style:none;
+    }
+
+    .mobile-menu ul {
+        flex-direction:column;
+        display:none;
+        position:absolute;
+        width:100%;
+        padding:20px;
+    }
+
+    .mobile-menu a {
+        color:#3c4761;
+        font-size:1rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        margin:0 5px;
+        padding:10px 17px;
+        display:block;
+    }
+ }
